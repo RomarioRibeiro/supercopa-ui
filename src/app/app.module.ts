@@ -1,6 +1,6 @@
 import { NavBarComponent } from './nav/nav-bar/nav-bar.component';
 import { PrimengModule } from './primeng.module';
-import { NgModule } from '@angular/core';
+import { NgModule, isDevMode } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MenuItem } from 'primeng/api';
 import {AccordionModule} from 'primeng/accordion';
@@ -27,6 +27,7 @@ import {MessageModule} from 'primeng/message';
 import {ToastModule} from 'primeng/toast';
 import { AppRoutingModule } from './app-routing.module';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,7 +48,8 @@ import { AppRoutingModule } from './app-routing.module';
     FormsModule,
     MessagesModule,
     MessageModule,
-    ToastModule
+    ToastModule,
+
   ],
   providers: [CopaService,
     MessageService,
